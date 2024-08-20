@@ -9,6 +9,8 @@ import Component5 from './components/Component5'
 import Component6 from './components/Component6'
 import Fotter from './components/Fotter'
 import Strip from './components/Strip'
+import HomePage from './components/HomePage'
+import Signup from './components/Signup'
 function App() {
   const data=[
     {
@@ -44,23 +46,10 @@ function App() {
   ];
   // const [t, tSet] = useState(0);
  
-
+const [btnclick,setBtnclick]=useState(0);
   return (
   <div className="">
-    <Component1/>
-     <Strip/>
-    <Component2/>
-    <Strip/>
-    <Component3/>
-    <Strip/>
-    <Component4/>
-    <Strip/>
-    <Component5/>
-    <Strip/>
-    <Component6 data={data} />
-    <Strip/>
-    <Fotter/>
-
+   {btnclick?<Signup btnclick={btnclick} setBtnclick={setBtnclick}/>:<HomePage btnclick={btnclick} setBtnclick={setBtnclick} data={data}/>}
   </div>
   )
 }

@@ -1,8 +1,8 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { FaPlus } from "react-icons/fa6";
 import { HiOutlineTranslate } from "react-icons/hi";
 import { MdOutlineArrowForwardIos } from "react-icons/md";
-function Component6({ data}) {
+function Component6({ data},isButtonVisible) {
   const [card,cardSet]=useState(null);
   const tSet=(id)=>
     {
@@ -40,15 +40,20 @@ function Component6({ data}) {
           );
         })}
         <div className="ready">Ready to watch? Enter your email to create or restart your membership.</div>
-        <div className="btn12">
-				<input className='email' type="email" placeholder='Email Address' />
-
+        {console.log(isButtonVisible)}
+        
+        {/* {isButtonVisible&&<div className="btn12">
+				<form action="">
+				<input className='email' type="email"  required placeholder='Email Address' />
+				
 				<div className="GetS">
-					<div className="Get">Get Started</div>
+					<button  className="Get">Get Started</button>
 					<div className="Get"><MdOutlineArrowForwardIos />
 					</div>
 				</div>
+				</form>
 			  </div>
+             } */}
       </div>
     </div>
   );

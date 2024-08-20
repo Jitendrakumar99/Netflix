@@ -7,11 +7,11 @@
 {
 	position: relative;
 	/* width: 100%; */
-	height: auto;
+	/* height: auto; */
 	display: flex;
 	flex-direction:column;
 	width: 100%;
-	aspect-ratio: 2/1;
+	aspect-ratio: 2/1.1;
 }
 select{
 	background-color:transparent;
@@ -92,8 +92,21 @@ height: 35px;
 	align-items: center;
 	flex-direction: row;
 	justify-content: space-between;
-
 	width: 255px;
+}
+.log
+{
+position: absolute;
+top:95%;
+/* left: 0px; */
+height: 100%;
+border-radius: 5px;
+width: 100%;
+display: flex;
+align-items: center;
+justify-content: center;
+background-color: white;
+color: red;
 }
 .english
 {
@@ -158,6 +171,7 @@ width: 50px;
 	border-radius: 5px;
 	cursor: pointer;
 	font-weight: 600;
+	position: relative;
 }
 .Unlimited
 {
@@ -182,7 +196,7 @@ width: 50px;
 	font-size: 2.5rem;
     font-weight: 900;
 	/* text-align: center; */
-	margin: 0 10px;
+	/* margin: 0 10px; */
 	
 }
 .watch{
@@ -354,6 +368,14 @@ input
 	 height: 110%;
 	 z-index: 0;
 }
+.second4 video{
+	position: absolute;
+	top: -23%;
+	left: 18%;
+	width: 65%; 
+	 height: 110%;
+	 z-index: 0;
+}
 .concenter
 {
 	display: flex;
@@ -378,6 +400,10 @@ input
 	.container2
 	{
 		height: fit-content;
+	}
+	.concenter
+	{
+		width: 95%;
 	}
 	.first2
 	{
@@ -407,6 +433,25 @@ input
 		max-width:400px;
 	max-height: 250px;
 	}
+	.watch1
+	{
+		
+font-size: 20px;
+	}
+}
+@media screen and (max-width:420px) {
+	
+	.second2
+	{
+	width: 100%;
+	height: 250px;
+	}
+	/* .second2 video
+	{
+	top: -25px;
+	} */
+
+	
 }
 
 
@@ -442,7 +487,7 @@ input
 	z-index: 5;
 	display: flex;
 	align-items: center;
-	justify-content: center;
+	/* justify-content: center; */
 	flex-direction: row;
 	gap: 10px;
 }
@@ -459,7 +504,7 @@ input
 }
 .txt
 {
-	width: 70%;
+	width: 50%;
 }
 .blue
 {
@@ -479,12 +524,15 @@ padding: 5px;
 	display: flex;
 	flex-direction: row;
 	align-items: center;
+	/* gap: 50px; */
+	/* row-gap: 50px; */
 	justify-content: center;
 	background-color: black;
 }
 .concenter4
 {
 	margin-top: 40px;
+	row-gap: 50px;
 	margin-bottom: 40px;
 }
 
@@ -571,6 +619,7 @@ padding: 5px;
 	font-size: 24px;
 	position: relative;
 }
+
 .answerhide
 {
 	display: none;
@@ -609,7 +658,8 @@ footer{
 }
 footer span{
 	font-size: 25px;
-	margin-top: 35px;
+	/* margin-top: 35px; */
+	margin: 30px;
 }
 .footer a{
 	font-size:15px ;
@@ -648,4 +698,8 @@ footer span{
 	/* height: 60px; */
 	width: 100%;
    gap: 10px;
+}
+.btn1
+{
+	width: 50%;
 }

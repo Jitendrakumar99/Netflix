@@ -6,15 +6,15 @@ function Component3() {
       <div className="concenter concenter3">
         
         <div className="second2">
-          <img src="mobile-0819.jpg" alt="" />
-		  <div className="cardd">
+          <img src="feature-2.png" alt="" />
+		  {/* <div className="cardd">
 			<div className="slogo"><img src="boxshot.png" alt="" /></div>
 			<div className="txt">
 				<div className="">Stranger Things</div>
 				<div className="blue">Downloading...</div>
 			</div>
 			<div className="bt">Down</div>
-		  </div>
+		  </div> */}
         </div>
 		<div className="first2">
           <div className="unlim">Download your shows to watch offline</div>
