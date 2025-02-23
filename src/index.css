@@ -297,6 +297,8 @@ input
 	.watch1
 	{
 		font-size: 5svw;
+		text-align: center
+		
 	}
 }
 @media screen and (max-width:498px) {
@@ -306,7 +308,11 @@ input
 	}
 	
 }
+.watch1
+{
+	text-align: center;
 
+}
 
 /* strip */
 
@@ -393,8 +399,14 @@ input
 .watch1{
 	font-size: 1.5rem;
     font-weight:400;
-	/* text-align: center; */
+	/* text-align: center;
+	text-align: center; */
+
 	margin: 0 10px;
+	text-align: start;
+	display: flex;
+	align-items: start;
+	justify-content: start;
 }
 @media screen and (max-width:1250px) {
 	.container2
@@ -424,6 +436,12 @@ input
 
 		padding-bottom: 30px;
 	}
+	.watch1
+	{
+		width: 95%;
+		justify-content: center;
+		align-items: center;
+	}
 
 }
 @media screen and (max-width:625px) {
@@ -437,6 +455,7 @@ input
 	{
 		
 font-size: 20px;
+text-align: center;
 	}
 }
 @media screen and (max-width:420px) {
