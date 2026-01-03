@@ -1,0 +1,9 @@
+version: "3.9"
+
+services:
+  netflix-frontend:
+    build: .
+    container_name: netflix-frontend
+    ports:
+      - "3005:80"
+    restart: always
